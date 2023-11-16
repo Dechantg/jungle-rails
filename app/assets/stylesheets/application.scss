@@ -111,3 +111,17 @@ form.button_to {
 .text-danger {
   color: #f38792 !important;
 }
+
+.admin-table {
+  width: 50%;
+  font-size: 2rem;
+
+  th {
+    text-align: left;
+  }
+
+  th, td {
+    text-align: right;
+    padding-left: 20px;
+  }
+}
