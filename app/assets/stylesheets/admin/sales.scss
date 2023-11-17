@@ -1,3 +1,31 @@
 // Place all the styles related to the admin/sales controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.label {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
+
+.label-danger {
+  background-color: #d9534f;
+  color: #fff; /* White text color */
+}
+
+.label-warning {
+  background-color: #f0ad4e;
+  color: #fff; /* White text color */
+}
+
+.label-success {
+  background-color: #5cb85c;
+  color: #fff; /* White text color */
+}
