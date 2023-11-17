@@ -52,6 +52,8 @@
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            onclick="console.log('Dropdown clicked!');"
+
           >
           
             Admin
@@ -70,11 +72,7 @@
       </ul>
     </div>
   </div>
-             <% if current_user %>
-  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-<% else %>
-  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-<% end %>
+  
 </nav>
 <script>
 (function(){
