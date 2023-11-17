@@ -44,6 +44,7 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
+ 
           <a
             class="nav-link dropdown-toggle text-danger"
             href="#"
@@ -52,6 +53,7 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
+          
             Admin
           </a>
           <ul class="dropdown-menu dropdown-menu-dark">
@@ -67,6 +69,11 @@
       </ul>
     </div>
   </div>
+             <% if current_user %>
+  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+<% else %>
+  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+<% end %>
 </nav>
 <script>
 (function(){
@@ -87,3 +94,4 @@ const gnr = () => {
   
 })()
   </script>
+
